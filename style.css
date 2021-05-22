@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url("images/bg.png");
+}
+.logo{
+	width: 110px;
+	height: 100px;
+}
+.container{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	box-shadow: 0 10px 6px -6px #777;
+}
+header{
+	display: flex;
+	margin: 3vh;
+}
+header >div{
+	margin-top:5vh;
+	line-height: 6vh;
+}
+p{
+	color: #f7dc34;
+	margin-left: 10px;
+	font-family: Cambria Bold,sans-serif;
+}
+.left-side > img{
+	margin-top: 80px;
+}
+h1{
+	font-family: Homework Normal, sans-serif;
+	font-size: 90px;
+	font-weight: lighter;
+	color: #f7dc34;
+}
+.left-side{
+	background: #1ab188;
+	width: 500px;
+	height: 400px;
+}
+	
+form > p{
+	font-weight: bold;
+	font-family: Calibri Light,sans-serif;
+	font-size: 20px;
+}
+a{
+	font-weight: lighter;
+	font-family: Calibri Light, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+button{
+	margin:10px 0px 10px 0px;
+	width: 83%;
+	height: 30px;
+	background: #179b76;
+	color: #fff;
+	font-weight: bolder;
+}
+/* this is new*/
+ 
+.right-side{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 250px;
+    height: 345px;  
+    background: #25333c; 
+    padding: 27px;
+}
+.right-side nav{   
+	border:3px solid #179b76;
+	border-radius: 5px ;
+	position: relative;   
+	width: 80%;   
+	height: 50px;   
+	display: flex;   
+	align-items: center;
+	justify-content: center;
+} 
+.right-side nav label{  
+	display: block;   
+	height: 100%;   
+	width: 100%;   
+	text-align: center;   
+	line-height: 50px; 
+  	cursor: pointer;   
+  	position: relative;   
+  	z-index: 1;   
+  	color:#778788;   
+  	font-size: 17px;   
+  	border-radius: 5px;   
+  	margin: 0 5px;   
+  	transition: all 0.3s ease; 
+}
+.right-side nav label::hover{
+   background: rgba(23,162,184,0.3);
+} 
+#sign-up-form:checked ~ nav label.sign-up-form,
+#login-form:checked ~ nav label.login-form{   
+	color: #fff; 
+} 
+nav label i{
+   padding-right: 7px; 
+} 
+nav .slider{   
+	position: absolute;   
+	height: 100%;   
+	width: 33%;   
+	left: 0;  
+	bottom: 0;   
+	z-index: 0;    
+	background: #179b76;   
+	transition: all 0.3s ease; 
+}
+input[type="radio"]{   
+	display: none;
+
+} 
+
+#login-form:checked ~ nav .slider{
+   left: 33%; 
+} 
+#sign-up-form:checked ~ nav .slider{
+   left: 0%; 
+}
+#y-form:checked ~ nav .slider{
+	left: 66%;
+}
+form{ 
+	display: none;   
+	background: #25333c; 
+	height: 430px;
+	text-align: center;
+} 
+
+#sign-up-form:checked ~  .first,
+#login-form:checked ~  .second{   
+	display: block;
+} 
+p{
+	line-height: 50px;
+}
+input,	button{
+	margin: 8px;
+	width: 80%;
+	height: 30px;
+}
+button{
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+button:hover{
+	opacity: 0.5;
+}
